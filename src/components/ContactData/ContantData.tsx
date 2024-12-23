@@ -9,7 +9,7 @@ const ContantData = () => {
         <p>Dossenheimer Landstr. 40<br />69121 Heidelberg</p>
         <p>Tel.: 06221 412450<br />
            Fax: 06221 4348260</p>
-        <p>Email: <a href="mailto:info@drcarmenmueller.de">info@drcarmenmueller.de</a></p>
+        <p>Email: <a href="mailto:praxisteammueller@web.de">praxisteammueller@web.de</a></p>
       </div>
     </>
   );
