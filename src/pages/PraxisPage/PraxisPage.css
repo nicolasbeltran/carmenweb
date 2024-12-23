@@ -1,0 +1,17 @@
+.praxis-content {
+  text-align: center;
+}
+
+.praxis-content .image-gallery-thumbnail {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.praxis-image-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.praxis-image-gallery .image-gallery {
+  max-width: 800px;
+}
