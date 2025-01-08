@@ -28,9 +28,9 @@ const Layout = () => {
     <>
       <div className="header">
         {!showCapy && 
-          <a href="/">
+          <Link to="/">
             <img className="logo" src={logo} alt=""  />
-          </a>
+          </Link>
         }
         {showCapy && <iframe src="https://giphy.com/embed/Y00mF6fy4LJdDFeN5M" className="capy-gif" title="capy-gif"></iframe>}
         <h1 onClick={handleTitleClick}>
