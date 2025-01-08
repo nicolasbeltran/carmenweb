@@ -14,12 +14,13 @@ const Navbar = () => {
   }, [location]);
 
   const pages = [
-    { name: 'Praxis', path: '/' },
+    { name: 'Startseite', path: '/' },
     { name: 'Team', path: '/team' },
     { name: 'Leistungen', path: '/leistungen' },
     { name: 'Links', path: '/links' },
     { name: 'Notfälle', path: '/notfalle' },
-    { name: 'Kontakt', path: '/contact' }
+    { name: 'Kontakt', path: '/contact' },
+    { name: 'Vor Ihrem Besuch', path: '/vor-ihrem-besuch' }
   ];
 
   return (
