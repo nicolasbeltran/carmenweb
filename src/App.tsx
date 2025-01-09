@@ -20,13 +20,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path="vor-ihrem-besuch" element={<BeforeYouComePage />} />
           <Route path="team" element={<TeamPage />} />
           <Route path="leistungen" element={<ServicesPage />} />
           <Route path="links" element={<LinksPage />} />
           <Route path="notfalle" element={<EmergenciesPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
-          <Route path="vor-ihrem-besuch" element={<BeforeYouComePage />} />
         </Route>
       </Routes>
     </HashRouter>
