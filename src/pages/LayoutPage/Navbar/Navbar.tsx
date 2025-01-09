@@ -15,12 +15,12 @@ const Navbar = () => {
 
   const pages = [
     { name: 'Startseite', path: '/' },
+    { name: 'Vor Ihrem Besuch', path: '/vor-ihrem-besuch' },
     { name: 'Team', path: '/team' },
     { name: 'Leistungen', path: '/leistungen' },
     { name: 'Links', path: '/links' },
     { name: 'Notfälle', path: '/notfalle' },
     { name: 'Kontakt', path: '/contact' },
-    { name: 'Vor Ihrem Besuch', path: '/vor-ihrem-besuch' }
   ];
 
   return (
