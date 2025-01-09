@@ -7,6 +7,10 @@ h1 {
   font-weight: 500;
 }
 
+.title-link:hover {
+  text-decoration: none;
+}
+
 .logo {
   width: 6rem;
 }
@@ -23,12 +27,6 @@ h1 {
 
 .sub-footer a:hover {
   color: #272928;
-}
-
-.capy-gif {
-  border: none;
-  width: 200px;
-  pointer-events: none;
 }
 
 .break-title {

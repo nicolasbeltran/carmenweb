@@ -4,8 +4,25 @@ import image2 from "../../img/praxis-gallery/praxis-2.jpeg";
 import image3 from "../../img/praxis-gallery/praxis-3.jpeg";
 
 import './HomePage.css';
+import { useState } from "react";
 
 const HomePage = () => {
+
+  const [clickTitleCount, setClickTitleCount] = useState(0);
+  const [showCapy, setShowCapy] = useState(false);
+
+  const handleTitleClick = () => {
+    setClickTitleCount((prevCount) => prevCount + 1);
+
+    setTimeout(() => {
+      setClickTitleCount(0);
+    }, 2000);
+
+    if (clickTitleCount + 1 === 10) {
+      setShowCapy(true);
+      setClickTitleCount(0);
+    }
+  };
 
   const images = [
     {
@@ -35,7 +52,9 @@ const HomePage = () => {
         />
       </section>
       <section>
-        <p>Liebe Eltern!</p>
+        <p onClick={handleTitleClick}>Liebe Eltern!</p>
+
+        {showCapy && <iframe src="https://giphy.com/embed/Y00mF6fy4LJdDFeN5M" className="capy-gif" title="capy-gif"></iframe>}
 
         <p>Auf unserer Praxis-Homepage finden Sie umfassende Informationen zu unserem Leistungsspektrum, unseren Sprechzeiten und nützliche Hinweise.</p>
 
@@ -45,8 +64,7 @@ const HomePage = () => {
 
         <p>Vertrauen Sie auf unsere Expertise und unser Engagement.</p>
 
-        <p>Dr. Carmen Müller <br/>
-        & Team</p>
+        <p>Dr. Carmen Müller & Team</p>
 
       </section>
     </div>

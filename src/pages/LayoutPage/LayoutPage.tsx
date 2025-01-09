@@ -8,34 +8,17 @@ import { useState } from "react";
 
 const Layout = () => {
 
-  const [clickTitleCount, setClickTitleCount] = useState(0);
-  const [showCapy, setShowCapy] = useState(false);
-
-  const handleTitleClick = () => {
-    setClickTitleCount((prevCount) => prevCount + 1);
-
-    setTimeout(() => {
-      setClickTitleCount(0);
-    }, 2000);
-
-    if (clickTitleCount + 1 === 10) {
-      setShowCapy(true);
-      setClickTitleCount(0);
-    }
-  };
-
   return (
     <>
       <div className="header">
-        {!showCapy && 
-          <Link to="/">
-            <img className="logo" src={logo} alt=""  />
-          </Link>
-        }
-        {showCapy && <iframe src="https://giphy.com/embed/Y00mF6fy4LJdDFeN5M" className="capy-gif" title="capy-gif"></iframe>}
-        <h1 onClick={handleTitleClick}>
-          Kinder- & Jugendarztpraxis <br className="break-title" /> Dr. med. Carmen Müller
-        </h1>
+        <Link to="/">
+          <img className="logo" src={logo} alt=""  />
+        </Link>
+        <Link to="/" className="title-link">
+          <h1>
+            Kinder- & Jugendarztpraxis <br className="break-title" /> Dr. med. Carmen Müller
+          </h1>
+        </Link>
       </div>
       <Navbar />
       <Outlet />
