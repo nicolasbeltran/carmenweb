@@ -56,26 +56,30 @@ const Popup = () => {
     <div className="popup-container">
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <div className="popup-dialog">
-          <h2 className="popup-title">Kinder- und Jugendarztpraxis</h2>
+          <h2 className="popup-title">Wir machen Urlaub!</h2>
           <p className="popup-text">
-            Die Praxis bleibt vom <strong>10.02.2025</strong> bis zum <strong>14.02.2025</strong> wegen Urlaub geschlossen.
+            Deshalb bleibt die Praxis vom <strong>10.02.2025</strong> bis zum <strong>14.02.2025</strong> geschlossen.
+            <br />
+            <br />
             Ab dem <strong>17.02.2025</strong> sind wir wieder wie gewohnt für Sie da.
           </p>
           <p className="popup-subtitle">In dringenden Fällen vertreten uns folgende Praxen:</p>
           <ul className="popup-list">
             <li className="popup-list-item">
-              <strong>Dr. med. Elke Haffelder</strong>
+              <strong>Dr. med. Haffelder</strong>
+              <br />
+              Furtwänglerstr. 1
               <br />
               Tel.: 06221/470147
               <br />
-              Adresse: Furtwänglerstr. 1
             </li>
             <li className="popup-list-item">
-              <strong>Dr. med. Gorning/Voller</strong>
+              <strong>Drs. med. Gorning/ Voller</strong>
+              <br />
+              Brückenkopfstr. 1/2
               <br />
               Tel.: 06221/401213
               <br />
-              Adresse: Brückenkopfstr. 1/2
             </li>
           </ul>
           <div className="popup-footer">
