@@ -91,3 +91,10 @@
 .popup-close-button:hover {
   background-color: #0056b3;
 }
+
+
+@media (max-width: 600px) {
+  .dialog-content{
+    width: 70%;
+  }
+}
