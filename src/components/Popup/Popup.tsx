@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Popup.css";
+import { PopupEnum } from "../../enums/common-enums";
 // import { PopupEnum } from "../../enums/common-enums";
 
 interface DialogProps {
@@ -42,14 +43,14 @@ const Popup = () => {
 
   console.log('Popup isOpen', isOpen);
 
-  // Un comment this code to show the popup only once
-  //  useEffect(() => {
-  //   const hasOpened = localStorage.getItem(PopupEnum.PopupShown);
-  //   if (!hasOpened) {
-  //     setIsOpen(true);
-  //     localStorage.setItem(PopupEnum.PopupShown, "true");
-  //   }
-  // }, []);
+  
+   useEffect(() => {
+    const hasOpened = localStorage.getItem(PopupEnum.PopupShown);
+    if (!hasOpened) {
+      setIsOpen(true);
+      localStorage.setItem(PopupEnum.PopupShown, "true");
+    }
+  }, []);
 
   return (
     <div className="popup-container">
