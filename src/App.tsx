@@ -13,8 +13,14 @@ import EmergenciesPage from './pages/EmergenciesPage/EmergenciesPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import ContactPage from './pages/ContactPage/ContactPage';
 import BeforeYouComePage from "./pages/BeforeYouComePage/BeforeYouComePage";
+import { PopupEnum } from "./enums/common-enums";
 
 function App() {
+
+  console.log('App render');
+  //clean localStorage
+  localStorage.removeItem(PopupEnum.PopupShown);
+  
   return (
     <HashRouter>
       <Routes>
