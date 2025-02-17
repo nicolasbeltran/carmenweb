@@ -5,7 +5,6 @@ import image3 from "../../img/praxis-gallery/praxis-3.jpeg";
 
 import './HomePage.css';
 import { useState } from "react";
-import Popup from "../../components/Popup/Popup";
 
 const HomePage = () => {
 
@@ -42,7 +41,6 @@ const HomePage = () => {
   
   return (
     <div className="page-content praxis-content">
-      <Popup />
       <section className='praxis-image-gallery'>
         <ImageGallery 
             items={images}
