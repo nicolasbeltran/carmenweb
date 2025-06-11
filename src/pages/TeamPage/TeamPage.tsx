@@ -2,7 +2,7 @@ import React from "react";
 import "./TeamPage.css";
 import imgCarmen from "../../img/team-gallery/Team-Carmen.jpeg";
 import imgSeyma from "../../img/team-gallery/Team-Seyma.jpeg";
-import imgMaria from "../../img/team-gallery/Team-Maria.jpeg";
+import imgMaria from "../../img/team-gallery/Team-Maria.jpg";
 import imgChiara from "../../img/team-gallery/Team-Chiara.jpeg";
 import imgMaroua from "../../img/team-gallery/Team-Maroua.png";
 

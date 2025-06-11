@@ -37,7 +37,12 @@ const Button: React.FC<ButtonProps> = ({ className, onClick, children }) => {
   );
 };
 
-const Popup = () => {
+type Props = {
+  isPopupEnabled: boolean;
+}
+
+const Popup = (props: Props) => {
+  const { isPopupEnabled } = props;
   
   const [isOpen, setIsOpen] = useState(false);
 
@@ -46,7 +51,7 @@ const Popup = () => {
   
    useEffect(() => {
     const hasOpened = localStorage.getItem(PopupEnum.PopupShown);
-    if (!hasOpened) {
+    if (isPopupEnabled && !hasOpened) {
       setIsOpen(true);
       localStorage.setItem(PopupEnum.PopupShown, "true");
     }
@@ -56,32 +61,16 @@ const Popup = () => {
     <div className="popup-container">
       <Dialog open={isOpen} onOpenChange={setIsOpen}>
         <div className="popup-dialog">
-          <h2 className="popup-title">Wir machen Urlaub!</h2>
+          {/* <h2 className="popup-title">Wir machen Urlaub!</h2> */}
           <p className="popup-text">
-            Deshalb bleibt die Praxis vom <strong>10.02.2025</strong> bis zum <strong>14.02.2025</strong> geschlossen.
-            <br />
-            <br />
-            Ab dem <strong>17.02.2025</strong> sind wir wieder wie gewohnt für Sie da.
+            Die Praxis bleibt am Freitag, 02.05.25 geschlossen.
           </p>
-          <p className="popup-subtitle">In dringenden Fällen vertreten uns folgende Praxen:</p>
-          <ul className="popup-list">
-            <li className="popup-list-item">
-              <strong>Dr. med. Haffelder</strong>
-              <br />
-              Furtwänglerstr. 1
-              <br />
-              Tel.: 06221/470147
-              <br />
-            </li>
-            <li className="popup-list-item">
-              <strong>Drs. med. Gorning/ Voller</strong>
-              <br />
-              Brückenkopfstr. 1/2
-              <br />
-              Tel.: 06221/401213
-              <br />
-            </li>
-          </ul>
+          <p className="popup-text">
+            Vertretung übernimmt freundlicherweise
+          </p>
+          <p className="popup-text">
+            Praxis Dr. Duelli, Keplerstr. 26, Telefon 06221 480890.
+          </p>
           <div className="popup-footer">
             <Button className="popup-close-button" onClick={() => setIsOpen(false)}>
               Schließen
