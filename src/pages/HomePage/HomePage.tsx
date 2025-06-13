@@ -9,6 +9,8 @@ import Popup from "../../components/Popup/Popup";
 
 const HomePage = () => {
 
+  const SHOW_POPUP = true;
+
   const [clickTitleCount, setClickTitleCount] = useState(0);
   const [showCapy, setShowCapy] = useState(false);
 
@@ -42,7 +44,7 @@ const HomePage = () => {
   
   return (
     <div className="page-content praxis-content">
-      <Popup isPopupEnabled={false} />
+      <Popup isPopupEnabled={SHOW_POPUP} />
       <section className='praxis-image-gallery'>
         <ImageGallery 
             items={images}
