@@ -1,3 +1,17 @@
+.popup-dialog iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.iframe-desktop {
+  display: block;
+}
+
+.iframe-mobile {
+  display: none;
+}
+
 .dialog-overlay {
   position: fixed;
   top: 0;
@@ -19,8 +33,7 @@
   max-width: 800px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.3s ease-out;
-  max-height: 85vh;
-  overflow-y: auto;
+  height: 420px;
 }
 
 @keyframes fadeIn {
@@ -55,6 +68,7 @@
 
 .popup-dialog {
   text-align: center;
+  height: 92%;
 }
 
 .popup-title {
@@ -178,9 +192,21 @@
   text-decoration: underline;
 }
 
+.popup-footer {
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 600px) {
   .dialog-content{
     width: 70%;
+  }
+
+  .iframe-desktop {
+    display: none;
+  }
+
+  .iframe-mobile {
+    display: block;
   }
   
   .popup-columns {
