@@ -4,7 +4,8 @@ import imgCarmen from "../../img/team-gallery/Team-Carmen.jpeg";
 import imgSeyma from "../../img/team-gallery/Team-Seyma.jpeg";
 import imgMaria from "../../img/team-gallery/Team-Maria.jpg";
 import imgChiara from "../../img/team-gallery/Team-Chiara.jpeg";
-import imgMaroua from "../../img/team-gallery/Team-Maroua.png";
+import imgSafia from "../../img/team-gallery/Team-Safia.jpeg";
+import imgMaroua from "../../img/team-gallery/Team-Maroua.jpeg";
 
 const teamMembers = [
   {
@@ -25,6 +26,11 @@ const teamMembers = [
   {
     image: imgChiara,
     name: "Chiara-Sophi Lauricella",
+    role: "Auszubildende zur MFA",
+  },
+  {
+    image: imgSafia,
+    name: "Safia Tair",
     role: "Auszubildende zur MFA",
   },
   {
