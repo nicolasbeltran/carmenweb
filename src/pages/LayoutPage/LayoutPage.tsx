@@ -5,11 +5,13 @@ import './LayoutPage.css';
 import Footer from "./Footer/Footer";
 import ScrollToTopButton from "./ScrollToTopButton/ScrollToTopButton";
 import { useState } from "react";
+import Popup from "../../components/Popup/Popup";
 
 const Layout = () => {
 
   return (
     <>
+      <Popup />
       <div className="header">
         <Link to="/">
           <img className="logo" src={logo} alt=""  />
